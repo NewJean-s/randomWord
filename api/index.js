@@ -83,7 +83,6 @@ const words = {
   'grape': '포도',
   'heart': '심장',
   'igloo': '이글루',
-  'jack': '잭',
   'lemon': '레몬',
   'mango': '망고',
   'needle': '바늘',

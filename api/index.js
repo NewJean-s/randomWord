@@ -101,10 +101,12 @@ app.get('/', (req, res) => {
   const { word } = req.query;
 
   if (word && words[word]) {
-    res.json({meaning: words[word]});
+    result = `{"meaning":"${words[word]}"}`
+    res.json(JSON.parse(result))
   } else {
     const randomWord = Object.keys(words)[Math.floor(Math.random() * Object.keys(words).length)];
-    res.json({word: randomWord});
+    result = `{"word":"${randomWord}"}`
+    res.json(JSON.parse(result))
   }
 });
 
